@@ -41,7 +41,7 @@ const produtos = [
     id: 6,
     nome: "Ferramentas",
     descricao: "Ferramentas especializadas para trabalhos em gesso e drywall",
-    imagem: "/lovable-uploads/ferramentas.png",
+    imagem: "/lovable-uploads/Ferramentas.png",
     categoria: "drywall"
   }
 ];
