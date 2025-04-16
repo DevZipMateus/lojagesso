@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Instagram } from 'lucide-react';
@@ -59,7 +60,7 @@ const Header = () => {
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-1">
-            <Link to="/" className="nav-link">Início</Link>
+            <a href="#inicio" className="nav-link">Início</a>
             <a href="#sobre" className="nav-link">Sobre Nós</a>
             <a href="#produtos" className="nav-link">Produtos</a>
             <a href="#servicos" className="nav-link">Serviços</a>
@@ -76,7 +77,7 @@ const Header = () => {
       {/* Menu Mobile */}
       <div className={`md:hidden ${isMobileMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden transition-all duration-300 ease-in-out`}>
         <div className="container-custom py-4 flex flex-col space-y-3 border-t mt-4">
-          <Link to="/" className="px-4 py-2 text-gray-700 hover:text-gesseiro-blue hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Início</Link>
+          <a href="#inicio" className="px-4 py-2 text-gray-700 hover:text-gesseiro-blue hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Início</a>
           <a href="#sobre" className="px-4 py-2 text-gray-700 hover:text-gesseiro-blue hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Sobre Nós</a>
           <a href="#produtos" className="px-4 py-2 text-gray-700 hover:text-gesseiro-blue hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Produtos</a>
           <a href="#servicos" className="px-4 py-2 text-gray-700 hover:text-gesseiro-blue hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Serviços</a>

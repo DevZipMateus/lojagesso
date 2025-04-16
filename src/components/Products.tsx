@@ -27,7 +27,7 @@ const produtos = [
     id: 4,
     nome: "Gesso em Pó",
     descricao: "Gesso em pó para molduras e acabamentos",
-    imagem: "https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    imagem: "/lovable-uploads/gessopo.png",
     categoria: "gesso"
   },
   {
@@ -39,9 +39,9 @@ const produtos = [
   },
   {
     id: 6,
-    nome: "Parafusos",
-    descricao: "Parafusos específicos para trabalhos em drywall",
-    imagem: "https://images.unsplash.com/photo-1621685771830-077d51a3deb9?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    nome: "Ferramentas",
+    descricao: "Ferramentas especializadas para trabalhos em gesso e drywall",
+    imagem: "/lovable-uploads/ferramentas.png",
     categoria: "drywall"
   }
 ];
@@ -132,10 +132,7 @@ const Products = () => {
             rel="noopener noreferrer"
             className="bg-gesseiro-green hover:bg-gesseiro-green/90 text-white px-6 py-3 rounded-lg transition-all flex items-center justify-center gap-2 font-medium inline-flex"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" className="bi bi-whatsapp" viewBox="0 0 16 16">
-              <path d="M13.601 2.326A7.854 7.854 0 0 0 8 0C3.582 0 0 3.582 0 8c0 1.422.378 2.749 1.02 3.875l-.008.04A8.86 8.86 0 0 1 0 16.018h2.005a6.82 6.82 0 0 0 1.264-.18l.009-.005A8.048 8.048 0 0 0 8 16c4.418 0 8-3.582 8-8a7.848 7.848 0 0 0-2.399-5.674l-1.516 1.516A5.864 5.864 0 0 1 14 8c0 3.314-2.686 6-6 6a5.975 5.975 0 0 1-3.107-.857l-.01-.005-.005-.002-.953.954.496-1.499A5.92 5.92 0 0 1 2 8c0-3.314 2.686-6 6-6a5.858 5.858 0 0 1 4.385 1.941l1.516-1.515A7.851 7.851 0 0 0 8 0z"/>
-              <path d="M10.837 3.629a6 6 0 0 0-8.485 8.485L.704 15.962a.5.5 0 0 0 .143.508.5.5 0 0 0 .55.08l3.744-1.613a6 6 0 0 0 8.485-8.485l-1.789 1.789a4 4 0 1 1-5.657 5.657l-1.82 1.82a.5.5 0 0 0-.146.353v.465A.5.5 0 0 0 5.5 16h.465a.5.5 0 0 0 .353-.146l.788-.789A6 6 0 0 0 10.837 3.63z"/>
-            </svg>
+            <img src="/lovable-uploads/1fa16bc1-908d-4a63-9c7f-88a25f117f80.png" alt="WhatsApp" className="w-5 h-5" />
             <span>Solicitar Orçamento</span>
           </a>
         </div>
