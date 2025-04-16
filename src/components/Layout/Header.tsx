@@ -1,14 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Phone, Mail, Instagram } from 'lucide-react';
 import { useIsMobile } from '../../hooks/use-mobile';
-
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useIsMobile();
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -17,19 +14,15 @@ const Header = () => {
         setIsScrolled(false);
       }
     };
-
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
-
-  return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-4'}`}>
+  return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white/95 backdrop-blur-md shadow-sm py-3' : 'bg-white py-4'}`}>
       <div className="container-custom">
         {/* Top Bar com Informações de Contato */}
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-4 md:mb-2">
@@ -61,7 +54,7 @@ const Header = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/Logo-lojadogesseiro.jpg" alt="Logo Loja do Gesseiro" className="h-auto w-auto" />
+            <img src="/lovable-uploads/Logo-lojadogesseiro.jpg" alt="Logo Loja do Gesseiro" className="h-24 w-auto" />
           </Link>
           
           {/* Desktop Navigation */}
@@ -74,11 +67,7 @@ const Header = () => {
           </nav>
           
           {/* Botão Menu Mobile */}
-          <button 
-            className="md:hidden text-gray-600 hover:text-gesseiro-blue focus:outline-none"
-            onClick={toggleMobileMenu}
-            aria-label="Menu de Navegação"
-          >
+          <button className="md:hidden text-gray-600 hover:text-gesseiro-blue focus:outline-none" onClick={toggleMobileMenu} aria-label="Menu de Navegação">
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -94,8 +83,6 @@ const Header = () => {
           <a href="#contato" className="px-4 py-2 text-gray-700 hover:text-gesseiro-blue hover:bg-gray-50 rounded-md" onClick={toggleMobileMenu}>Contato</a>
         </div>
       </div>
-    </header>
-  );
+    </header>;
 };
-
 export default Header;
