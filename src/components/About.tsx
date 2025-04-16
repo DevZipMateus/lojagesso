@@ -12,7 +12,7 @@ const About = () => {
             <div className="relative">
               <div className="bg-gesseiro-blue/20 w-full h-full absolute -left-6 -top-6 rounded-lg"></div>
               <img 
-                src="https://images.unsplash.com/photo-1585336261176-3e408ff5f1c5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                src="/lovable-uploads/Captura de tela de 2025-04-16 11-07-40.png" 
                 alt="Trabalho em gesso e drywall" 
                 className="relative z-10 rounded-lg shadow-lg w-full object-cover h-[400px]"
               />
