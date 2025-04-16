@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Layers, Tools, PaintBucket, Home } from 'lucide-react';
+import { Layers, Wrench, PaintBucket, Home } from 'lucide-react';
 
 const servicos = [
   {
@@ -14,7 +14,7 @@ const servicos = [
     id: 2,
     titulo: "Divisórias de Drywall",
     descricao: "Divisórias em drywall para ambientes residenciais e comerciais.",
-    icon: Tools,
+    icon: Wrench,
     delay: '0.1s'
   },
   {
