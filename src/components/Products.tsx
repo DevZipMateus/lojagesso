@@ -6,21 +6,21 @@ const produtos = [
     id: 1,
     nome: "Placas de Gesso",
     descricao: "Placas de gesso acartonado para forros e paredes",
-    imagem: "https://images.unsplash.com/photo-1581876822843-9856257055e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    imagem: "/lovable-uploads/placasdegesso.png",
     categoria: "gesso"
   },
   {
     id: 2,
     nome: "Perfis Metálicos",
     descricao: "Estruturas metálicas para instalação de drywall",
-    imagem: "https://images.unsplash.com/photo-1581141849291-1125c7b692b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    imagem: "/lovable-uploads/Perfismetálicos.png",
     categoria: "drywall"
   },
   {
     id: 3,
-    nome: "Massas para Juntas",
-    descricao: "Massas especiais para acabamento de juntas",
-    imagem: "https://images.unsplash.com/photo-1622127800318-3f8c3d5d403a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    nome: "Massas para acabamento",
+    descricao: "Massas especiais para acabamento de superfícies",
+    imagem: "/lovable-uploads/baldes.png",
     categoria: "acabamento"
   },
   {
@@ -32,10 +32,10 @@ const produtos = [
   },
   {
     id: 5,
-    nome: "Fitas para Drywall",
-    descricao: "Fitas para juntas e acabamentos de drywall",
-    imagem: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
-    categoria: "acabamento"
+    nome: "Placas de Drywall",
+    descricao: "Placas de drywall para construção de paredes e forros",
+    imagem: "/lovable-uploads/placasdedraywall.png",
+    categoria: "drywall"
   },
   {
     id: 6,
